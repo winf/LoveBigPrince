@@ -16,7 +16,109 @@
 </head>
 
 <body>
+	<div id="mainDiv"><!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
 	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				
+				<span class="space"/><span class="comments">亲 爱 的 ，生 日 快 乐！</span><br /><br />
+
+				<span class="space"/><span class="comments">我 们 在 游 戏 中 相 识 已 有 两 月 有 余</span><br />
+				<span class="space"/><span class="comments">还 记 得 游 戏 里 的 游 山 玩 水 拍 照</span><br />
+				<span class="space"/><span class="comments">记 得 鸡 鸣 寺 塔 顶 向 你 表 白</span><br />
+				<span class="space"/><span class="comments">现 在 回 想 依 然 甜 蜜</span><br /><br />
+				
+				<span class="space"/><span class="comments">在 网 上 我 们 聊 着 各 自 的 生 活,未 来,梦 想</span><br />
+				<span class="space"/><span class="comments">我 们 深 深 被 互 相 所 吸 引</span><br /><br />
+				
+				<span class="space"/><span class="comments">直 到 那 次 出 差 经 过 你 的 城 市</span><br />
+				<span class="space"/><span class="comments">有 幸 见 到 漂 亮 乐 观 善 良 温 柔 的 你</span><br /><br />
+				
+				<span class="space"/><span class="comments">有 过 相 聚 时 的 快 乐</span><br />
+				<span class="space"/><span class="comments">也 有 过 分 离 时 的 失 落</span><br /><br />
+				
+				<span class="space"/><span class="comments">每 天 期 待 着 与 你 下 一 次 见 面</span><br />
+				<span class="space"/><span class="comments">每 晚 期 待 梦 中 与 你 相 遇</span><br /><br />
+				
+				<span class="space"/><span class="comments">你 带 我 走 遍 你 生 活 的 校 园</span><br />
+				<span class="space"/><span class="comments">我 牵 你 走 过 我 生 活 的 城 市</span><br />
+				<span class="space"/><span class="comments">希 望 可 以 牵 着 你 走 一 辈 子</span><br /><br />
+				
+				<span class="space"/><span class="comments">我 相 信 爱，能 让 我 们 战 胜 时 间 和 距 离</span><br />
+				<span class="space"/><span class="comments">修 成 正 果</span><br />
+					
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						白岩, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- 贺岱</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			D❤Y
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2018, 2, 8);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
+
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
