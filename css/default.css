@@ -7,7 +7,6 @@ body {
 }
 
 #mainDiv {
-    /*margin: 0 auto;*/
     width: 100%;
     height: 100%
 }
@@ -19,7 +18,7 @@ body {
 }
 
 #garden {
-    width: 90%;
+    width: 100%;
     height: 100%
 }
 
@@ -32,7 +31,7 @@ body {
 
 #words {
     font-family: "sans-serif";
-    width: 466px;
+    width: 500px;
     font-size: 24px;
     color: #666
 }
@@ -49,8 +48,8 @@ body {
 #loveu {
     padding: 5px;
     font-size: 22px;
-    margin-top: 60px;
-    margin-right: 100px;
+    margin-top: 80px;
+    margin-right: 120px;
     text-align: right;
     display: none
 }
@@ -67,7 +66,7 @@ body {
 
 #code {
     float: left;
-    width: 440px;
+    width: 400px;
     height: 400px;
     color: #333;
     font-family: "Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
