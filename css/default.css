@@ -13,7 +13,7 @@ body {
 
 #loveHeart {
     float: left;
-    width: 640px;
+    width: 670px;
     height: 625px
 }
 
@@ -49,7 +49,7 @@ body {
     padding: 5px;
     font-size: 22px;
     margin-top: 80px;
-    margin-right: 140px;
+    margin-right: 120px;
     text-align: right;
     display: none
 }
@@ -70,7 +70,7 @@ body {
     height: 400px;
     color: #333;
     font-family: "Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
-    font-size: 15px;
+    font-size: 12px;
     line-height: 8px;
 }
 
